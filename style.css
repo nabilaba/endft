@@ -1,0 +1,117 @@
+body {
+  font-family: Poppins, system-ui;
+  background-color: #141943;
+  color: #fff;
+  padding-top: 2rem;
+}
+
+.bg {
+  background-color: #141943 !important;
+}
+
+/* navbar */
+.nabil-navbar {
+  background-color: #141943;
+  z-index: 5;
+}
+.nabil-navbar__logo {
+  background: #0d28a6;
+  width: 100px;
+  height: 34px;
+}
+
+/* set default toggler border and accordion border when focus */
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+/* custom button hamburger */
+.nabil-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: transform 0.3s ease-in-out;
+}
+.nabil-toggler:hover {
+  transform: rotate(360deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* make responsive */
+.nabil-container {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+@media (min-width: 576px) {
+  .nabil-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .nabil-container {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .nabil-container {
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .nabil-container {
+    padding-right: 7rem;
+    padding-left: 7rem;
+  }
+}
+
+.nabil-card {
+  background: linear-gradient(
+    155.14deg,
+    rgba(255, 255, 255, 0) -2.13%,
+    rgba(255, 255, 255, 0.15) 136.58%
+  );
+}
+
+.nabil-owl-prev,
+.nabil-owl-next {
+  padding: 5px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  border-radius: 50% !important;
+  transition: all 0.125s ease-in-out;
+}
+.nabil-owl-prev {
+  float: left;
+  border: 1px solid #000 !important;
+  background-color: #fff !important;
+}
+.nabil-owl-next {
+  float: right;
+  border: 1px solid #5cb85f !important;
+  background-color: #5cb85f !important;
+}
+.nabil-owl-prev:active,
+.nabil-owl-next:active {
+  transform: scale(0.75);
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
