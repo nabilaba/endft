@@ -20,7 +20,8 @@ body {
   height: 34px;
 }
 
-/* set default toggler border and accordion border when focus */
+/* remove toggler, btn close offcanvas and accordion border when focus */
+.btn-close:focus,
 .navbar-toggler:focus,
 .navbar-toggler-icon:focus {
   outline: none;
